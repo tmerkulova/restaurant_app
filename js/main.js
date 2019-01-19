@@ -156,6 +156,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  * Create restaurant HTML.
  */
 createRestaurantHTML = (restaurant) => {
+  const id = restaurant.name;
   const li = document.createElement('li');
 
   const image = document.createElement('img');
@@ -164,14 +165,17 @@ createRestaurantHTML = (restaurant) => {
   li.append(image);
 
   const name = document.createElement('h1');
+  name.setAttribute('tabindex', 0);
   name.innerHTML = restaurant.name;
   li.append(name);
 
   const neighborhood = document.createElement('p');
+  neighborhood.setAttribute('tabindex', 0);
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 
   const address = document.createElement('p');
+  address.setAttribute('tabindex', 0);
   address.innerHTML = restaurant.address;
   li.append(address);
 

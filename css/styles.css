@@ -66,6 +66,21 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
+.skip-link {
+   position: absolute;
+   top: -40px;
+   left: 0;
+   background: #BF1722;
+   color: #00FF00;
+   padding: 8px;
+   z-index: 100;
+ }
+
+.skip-link:focus {
+ top: 0;
+}
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -196,7 +211,7 @@ nav h1 a {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1100;
 }
 .inside #map-container {
   display: block;
